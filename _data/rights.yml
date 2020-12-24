@@ -1,0 +1,16 @@
+#  License data.
+#
+#  v2.1
+#  https://github.com/cotes2020/jekyll-theme-chirpy
+#  © 2020 Cotes Chung
+#  MIT Licensed
+
+
+license:
+  name: IU
+  link: ""
+
+brief: #保留部分权利
+
+verbose: >-
+  除非另有说明，本网站上的博客文章都是经过许可的。
