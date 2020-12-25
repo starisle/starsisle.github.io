@@ -55,12 +55,14 @@ google_analytics:
 disqus:
   comments: false  # boolean类型，posts注释的全局开关.
   shortname: 'user'    # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+
 gitalk:
   comments: true
-  owner: IU2099
-  repo: IU2099.github.io
-  clientID: 1fbae11b97c0091779a8
-  clientSecret: 60eef3273d6ce98bf0c5393f9cc79a5e34442b94
+  owner: 'IU2099'
+  admin: 'IU'
+  repo: 'iu2099.github.io'
+  clientID: 'ed52df6e3413b4926979'
+  clientSecret: '285823f2e7642a7c8d284ef39787bab0c197b919'
 
 # 首选配色方案设置。
 # 注意：Keep empty默认遵循系统首选颜色，
