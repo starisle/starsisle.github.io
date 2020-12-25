@@ -2,6 +2,7 @@
   Aggregation of common JS.
 */
 
+
 {% include_relative _commons/back-to-top.js %}
 
 {% include_relative _commons/search-display.js %}

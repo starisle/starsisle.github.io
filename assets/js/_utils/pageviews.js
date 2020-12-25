@@ -1,9 +1,5 @@
 /**
  * Count pageviews form GA or local cache file.
- *
- * Dependences:
- *   - jQuery
- *   - countUp.js <https://github.com/inorganik/countUp.js>
  */
 
 var getInitStatus = (function () {

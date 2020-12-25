@@ -6,7 +6,6 @@ categories: [Blogging, Demo]
 tags: [typography]
 math: true
 mermaid: true
-image: /assets/img/sample/devices-mockup.png
 ---
 
 This post is to show Markdown syntax rendering on [**Chirpy**](https://github.com/cotes2020/jekyll-theme-chirpy/fork), you can also use it as an example of writing. Now, let's start looking at text and typography.
@@ -16,11 +15,6 @@ This post is to show Markdown syntax rendering on [**Chirpy**](https://github.co
 ---
 # H1 - heading
 
-<h2 data-toc-skip>H2 - heading</h2>
-
-<h3 data-toc-skip>H3 - heading</h3>
-
-<h4>H4 - heading</h4>
 ---
 <br>
 
@@ -95,20 +89,17 @@ _Full screen width and center alignment_
 
 - Specify width
 
-![Desktop View](/assets/img/sample/mockup.png){: width="400"}
 _400px image width_
 
 <br>
 
 - Left aligned
 
-![Desktop View](/assets/img/sample/mockup.png){: width="350" .normal}
 
 <br>
 
 - Float to left
 
-  ![Desktop View](/assets/img/sample/mockup.png){: width="240" .left}
   "A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space."
 
 <br>

@@ -46,17 +46,17 @@
         self.updateMermaid();
       });
 
-      this.setModeToTime();
     } /* constructor() */
 
     setModeToTime() {
       let now = new Date();
       var hour = now.getHours();
+      console.log(hour);
       if (19 <= hour || hour <= 7) {
         this.setDark();
         console.log("夜间");
       }
-      if (7 < hour < 19) {
+      if (7 < hour &&hour <19) {
         this.setLight();
         console.log("日间");
       }

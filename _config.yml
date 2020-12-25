@@ -74,6 +74,7 @@ gitalk:
 #
 theme_mode:  # <light|dark>
 canvasTime: true
+
 #boolean类型，posts中ToC的全局开关。
 toc: true
 

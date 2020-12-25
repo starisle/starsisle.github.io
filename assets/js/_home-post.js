@@ -5,7 +5,6 @@
 {% include_relative _commons.js %}
 
 {% include_relative _utils/timeago.js %}
-{% include_relative lib/gitalk.min.js %}
 
 
 {% if site.google_analytics.pv.enabled %}

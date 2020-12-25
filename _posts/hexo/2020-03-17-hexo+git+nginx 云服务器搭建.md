@@ -8,19 +8,18 @@ pin: false
 toc: true
 ---
 
+
+# 安装nginx
+
 ## 使用purge卸载，以删除配置文件和记录
 
 ```shell
 sudo apt-get purge nginx nginx-common nginx-full
-```
-
-## **安装nginx：**
-
-```shell
+#安装
 sudo apt-get install nginx
 ```
 
-## 执行以下命令查看是否安装git
+### 执行以下命令查看是否安装git
 
 ```shell
 git --version 
@@ -30,7 +29,7 @@ git --version
 sudo apt-get install git
 ```
 
-## 单独创建一个用户来管理git
+# 单独创建一个用户来管理git
 
 ```shell
 adduser git 
@@ -48,7 +47,7 @@ hook钩子函数内容:
 git --work-tree=/home/git/projects/hexoBlog --git-dir=/home/git/repos/hexoBlog.git checkout -f
 ```
 
-**修改权限**
+## 修改权限
 
 ```shell
 chmod +x post-receive
@@ -62,7 +61,7 @@ chown -R git:git /home/git/repos/hexoBlog.git // 添加权限
 git clone git@119.28.41.16:/home/git/repos/hexoBlog.git
 ```
 
-## 重启 Nginx 服务
+# 重启 Nginx 服务
 
 ```shell
 sudo service nginx restart
