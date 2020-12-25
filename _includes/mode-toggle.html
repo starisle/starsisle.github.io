@@ -12,6 +12,7 @@
     static get DARK_MODE() { return "dark"; }
     static get LIGHT_MODE() { return "light"; }
 
+
     constructor() {
       if (this.hasMode) {
         if (this.isDarkMode) {
@@ -28,7 +29,7 @@
       var self = this;
 
       /* always follow the system prefers */
-      this.sysDarkPrefers.addListener(function() {
+      this.sysDarkPrefers.addListener(function () {
         if (self.hasMode) {
           if (self.isDarkMode) {
             if (!self.isSysDarkPrefer) {
@@ -40,15 +41,26 @@
               self.setLight();
             }
           }
-
           self.clearMode();
         }
-
         self.updateMermaid();
       });
 
+      this.setModeToTime();
     } /* constructor() */
 
+    setModeToTime() {
+      let now = new Date();
+      var hour = now.getHours();
+      if (19 <= hour || hour <= 7) {
+        this.setDark();
+        console.log("夜间");
+      }
+      if (7 < hour < 19) {
+        this.setLight();
+        console.log("日间");
+      }
+    }
 
     setDark() {
       $('html').attr(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE);
@@ -80,7 +92,7 @@
     /* get the current mode on screen */
     get modeStatus() {
       if (this.isDarkMode
-        || (!this.hasMode && this.isSysDarkPrefer) ) {
+        || (!this.hasMode && this.isSysDarkPrefer)) {
         return ModeToggle.DARK_MODE;
       } else {
         return ModeToggle.LIGHT_MODE;
@@ -89,11 +101,11 @@
 
     updateMermaid() {
       if (typeof mermaid !== "undefined") {
-        let expectedTheme = (this.modeStatus === ModeToggle.DARK_MODE? "dark" : "default");
+        let expectedTheme = (this.modeStatus === ModeToggle.DARK_MODE ? "dark" : "default");
         let config = { theme: expectedTheme };
 
         /* re-render the SVG › <https://github.com/mermaid-js/mermaid/issues/311#issuecomment-332557344> */
-        $(".mermaid").each(function() {
+        $(".mermaid").each(function () {
           let svgCode = $(this).prev().children().html();
           $(this).removeAttr("data-processed");
           $(this).html(svgCode);
@@ -137,7 +149,7 @@
 
   let toggle = new ModeToggle();
 
-  $(".mode-toggle").click(function() {
+  $(".mode-toggle").click(function () {
 
     toggle.flipMode();
 
