@@ -11,14 +11,6 @@ toc: true
 
 # 安装nginx
 
-## 使用purge卸载，以删除配置文件和记录
-
-```shell
-sudo apt-get purge nginx nginx-common nginx-full
-#安装
-sudo apt-get install nginx
-```
-
 ### 执行以下命令查看是否安装git
 
 ```shell
