@@ -6,6 +6,7 @@ categories: [计算机,linux]
 tags: [ubuntu,mysql]
 pin: false
 toc: true
+comments: true  
 ---
 
 Ubuntu安装配置mysql

@@ -6,6 +6,7 @@ categories: [博客]
 tags: [hexo]
 pin: false
 toc: true
+comments: true  
 ---
 
 

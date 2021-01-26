@@ -6,6 +6,7 @@ categories: [计算机,linux]
 tags: [centOs,samba]
 pin: false
 toc: true
+comments: true  
 ---
 
 # 一、简介
