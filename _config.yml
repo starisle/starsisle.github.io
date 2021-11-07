@@ -11,7 +11,7 @@ url: 'https://iu2099.github.io'
 showAuthor: false
 author: IU                  # 改成你的全名
 
-avatar: /assets/img/sample/avatar.png   # 支持互联网资源
+avatar: /assets/img/sample/head.png   # 支持互联网资源
 
 github:
   username: iu2099             # 更改为github用户名
