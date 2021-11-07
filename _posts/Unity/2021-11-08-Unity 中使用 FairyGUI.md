@@ -1,7 +1,6 @@
 ---
 title: "Unity 中使用 FairyGUI"
-author: IU
-date: 2021-11-08 00:31:45
+date: 2021-11-08 00:31:45 +0800
 categories: [Unity]
 tags: [Unity]
 pin: false

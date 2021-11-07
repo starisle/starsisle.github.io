@@ -2,8 +2,7 @@
 layout: compress
 ---
 
-{% capture source %}
-<feed xmlns="http://www.w3.org/2005/Atom">
+{% capture source %}<feed xmlns="http://www.w3.org/2005/Atom">
   <id>{{ site.url }}</id>
   <title>{{ site.title }}</title>
   <subtitle>{{ site.description }}</subtitle>
@@ -17,26 +16,24 @@ layout: compress
   <generator uri="https://jekyllrb.com/" version="{{ jekyll.version }}">Jekyll</generator>
   <rights> © {{ 'now' | date: '%Y' }} {{ site.author }} </rights>
   <icon>{{ site.baseurl }}/assets/img/favicons/favicon.ico</icon>
-  <logo>{{ site.baseurl }}/assets/img/favicons/favicon-96x96.png</logo>
-
-{% for post in site.posts limit: 5 %}
+  <logo>{{ site.baseurl }}/assets/img/favicons/favicons.png</logo>
+  {% for post in site.posts limit: 5 %}
   {% assign post_absolute_url = site.url | append: post.url %}
   <entry>
     <title>{{ post.title }}</title>
     <link href="{{ post_absolute_url }}" rel="alternate" type="text/html" title="{{ post.title }}" />
     <published>{{ post.date | date_to_xmlschema }}</published>
-  {% if post.last_modified_at %}
+    {% if post.last_modified_at %}
     <updated>{{ post.last_modified_at | date_to_xmlschema }}</updated>
-  {% else %}
+    {% else %}
     <updated>{{ post.date | date_to_xmlschema }}</updated>
-  {% endif %}
+    {% endif %}
     <id>{{ post_absolute_url }}</id>
     <content src="{{ post_absolute_url }}" />
     <author>
       <name>{{ site.author }}</name>
     </author>
-
-  {% if post.categories %}
+    {% if post.categories %}
     {% for category in post.categories %}
     <category term="{{ category }}" />
     {% endfor %}
@@ -44,15 +41,14 @@ layout: compress
 
   {% if post.summary %}
     <summary>{{ post.summary | strip }}</summary>
-  {% else %}
+    {% else %}
     <summary>
       {% include no-linenos.html content=post.content %}
       {{ content  | strip_html | truncate: 400 }}
     </summary>
-  {% endif %}
-
+    {% endif %}
   </entry>
-{% endfor %}
+  {% endfor %}
 </feed>
 {% endcapture %}
 {{ source | replace: '&', '&amp;' }}

@@ -9,7 +9,8 @@ description:
 url: 'https://iu2099.github.io'
 
 showAuthor: false
-author: IU                  # 改成你的全名
+author: CK                  # 改成你的全名
+
 
 avatar: /assets/img/sample/head.png   # 支持互联网资源
 
@@ -20,7 +21,7 @@ twitter:
   username:           # change to your twitter username
 
 social:
-  name: IU                  # 它将在页脚中显示为版权所有者
+  name: CK                  # 它将在页脚中显示为版权所有者
   email: spring.onion@live.cn            # change to your email address
   links:
     # 第一个元素充当版权所有者的链接

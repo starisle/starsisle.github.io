@@ -1,13 +1,10 @@
 ---
 title: "Unity3D各平台Application.xxxPath的路径"
-date: 2021-11-08 00:35:40
+date: 2019-12-05 00:35:40 +0800
 tags: "Unity"
 categories: [Unity]
 comments: false
 ---
-<!-- more -->
-# Unity3D各平台Application.xxxPath的路径
-
 常用的是以下四个路径：
 
 Application.dataPath

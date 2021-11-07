@@ -1,6 +1,5 @@
 ---
 title: hexo+git+nginx 云服务器搭建
-author: IU
 date: 2020-03-17 08:07:42 +0800
 categories: [博客]
 tags: [hexo]

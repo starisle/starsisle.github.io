@@ -1,13 +1,10 @@
 ---
 title: "unity PackageManager无法直接搜索的包"
-date: 2021-11-08 00:34:56
+date: 2019-12-08 15:34:56 +0800
 tags: "Unity"
 categories: [Unity]
 comments: false
 ---
-<!-- more -->
-# unity PackageManager无法直接搜索的包
-
 1、打开package manager
 
 2、在左上角＋号图标选择`Add package from git URL`

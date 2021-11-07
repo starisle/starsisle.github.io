@@ -1,7 +1,7 @@
 #  License data.
-
+show: false
 license:
-  name: IU
+  name: ""
   link: ""
 
 brief: #保留部分权利

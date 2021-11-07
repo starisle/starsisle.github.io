@@ -1,7 +1,7 @@
 ---
 title: "Unity 'Rigidbody'移动和'Charactercontroller'移动区别"
 author: IU
-date: 2021-11-08 00:35:21
+date: 2019-12-11 22:35:21 +0800
 categories: [Unity]
 tags: [Unity]
 pin: false
