@@ -1,12 +1,13 @@
 ---
 title: "Unity 'Rigidbody'移动和'Charactercontroller'移动区别"
+author: IU
 date: 2021-11-08 00:35:21
-tags: "Unity"
 categories: [Unity]
+tags: [Unity]
+pin: false
+toc: false
 comments: false
 ---
-<!-- more -->
-# 'Rigidbody'移动和'Charactercontroller'移动区别
 
 ## 物体碰撞的条件
 
