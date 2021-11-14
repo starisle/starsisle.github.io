@@ -1,6 +1,6 @@
 ---
 title: CentOS 7下Samba服务器的安装与配置
-author: IU
+author: CK
 date: 2020-12-26 18:11:12 +0800
 categories: [Computer]
 tags: [Linux,samba]

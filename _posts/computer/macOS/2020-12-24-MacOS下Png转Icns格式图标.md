@@ -1,8 +1,8 @@
 ---
 title: MacOS下 Png 转 Icns 格式图标
-author: IU
+author: CK
 date: 2020-12-24 12:12:20 +0800
-categories: [计算机,macOS]
+categories: [Computer]
 tags: [MacOS]
 pin: false
 toc: true

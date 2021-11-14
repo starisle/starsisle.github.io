@@ -1,6 +1,6 @@
 ---
 title: Ubuntu安装配置mysql
-author: IU
+author: CK
 date: 2020-07-16 15:07:42 +0800
 categories: [Computer]
 tags: [Linux,Mysql]
