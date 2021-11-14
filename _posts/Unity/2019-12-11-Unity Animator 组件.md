@@ -5,7 +5,6 @@ tags: "Unity"
 categories: [Unity]
 comments: false
 ---
-<!-- more -->
 
 1. Controller：使用的 Animator Controller 文件。
 2. Avatar：使用的骨骼文件。

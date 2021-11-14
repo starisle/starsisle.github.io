@@ -5,6 +5,7 @@ tags: "Unity"
 categories: [Unity]
 comments: false
 ---
+
 常用的是以下四个路径：
 
 Application.dataPath

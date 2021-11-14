@@ -9,6 +9,7 @@ toc: false
 comments: false
 ---
 
+
 ## 物体碰撞的条件
 
 - 两个物体都必须带有碰撞器（Collider),其中一个必须带有刚体（Rigidbody) 或者 "Charactercontroller" 组件.
