@@ -2,7 +2,7 @@
 title: hexo+git+nginx 云服务器搭建
 date: 2020-03-17 08:07:42 +0800
 categories: [博客]
-tags: [hexo]
+tags: [Hexo]
 pin: false
 toc: true
 comments: true  

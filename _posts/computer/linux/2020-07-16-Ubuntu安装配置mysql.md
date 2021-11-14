@@ -2,8 +2,8 @@
 title: Ubuntu安装配置mysql
 author: IU
 date: 2020-07-16 15:07:42 +0800
-categories: [计算机,linux]
-tags: [ubuntu,mysql]
+categories: [Computer]
+tags: [Linux,Mysql]
 pin: false
 toc: true
 comments: true  
