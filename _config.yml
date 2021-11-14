@@ -74,23 +74,30 @@ gitalk:
 #
 theme_mode:  # <light|dark>
 canvasTime: true
-
+clipboard : true
 #boolean类型，posts中ToC的全局开关。
 toc: true
 
 paginate: 10
 
+# highlight_theme: tomorrow-night-eighties
+markdown: kramdown
+highlighter: rouge
 kramdown:
+  input: GFM
   syntax_highlighter: rouge
   syntax_highlighter_opts:   # Rouge Options › https://github.com/jneen/rouge#full-options
     css_class: highlight
     # 默认语言： console
     span:
-      line_numbers: false
+      line_numbers: true
     block:
       line_numbers: true
       start_line: 1
 
+
+
+  
 #除非您是Jekyll和Web开发方面的专业用户，否则不要更改此设置，
 #或者您认为自己足够聪明，可以更改此模板中的其他相关URL。
 permalink: /posts/:title/

@@ -16,7 +16,6 @@ Unity项目载入UI包有以下几种方式，开发者可以根据项目需要�
     ![](https://www.fairygui.com/docs_images/20180908225713.png)
     
     这种方式处理的UI包，如果使用UIPanel显示UI，不需要任何代码载入包，UIPanel会自动载入；如果是动态创建UI，则要使用代码载入包：
-    
     ```csharp
      //demo就是发布时填写的文件名
      UIPackage.AddPackage("demo");
@@ -27,7 +26,6 @@ Unity项目载入UI包有以下几种方式，开发者可以根据项目需要�
      //如果不放到Resources或者其子目录下，可以传入全路径，但这种方法只能在Editor里使用
      UIPackage.AddPackage("Assets/SomePath/Package1");
     ```
-    
     AddPackage会先使用传入的路径作为key进行检测，如果这个包已经添加，则不会重复添加。
     
 2.  将发布后的文件打包为两个AssetBundle，即定义文件和资源各打包为一个bundle(desc_bundle+res_bundle)。这样做的好处是一般UI的更新都是修改元件位置什么的，不涉及图片资源的更新，那么只需要重新打包和推送desc_bundle就行了，不需要让玩家更新通常体积比较大的res_bundle，节省流量。打包程序由开发者按照自己熟悉的方式自行实现。以demo为例，请遵循以下规则打包：

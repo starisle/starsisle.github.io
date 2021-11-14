@@ -28,4 +28,9 @@
     {% include google-analytics.html %}
   {% endif %}
 
+  {% if site.clipboard %}
+    <script src="{{ site.baseurl }}/assets/js/lib/clipboard.js"></script>
+  {% endif %}
+
+
 {% endif %}

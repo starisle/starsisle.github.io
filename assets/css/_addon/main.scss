@@ -9,6 +9,7 @@
 @import "_colors/dark-typography";
 @import "_addon/custom";
 @import "_addon/gitalk";
+@import "_addon/codeHeader.scss";
 
 @mixin mode-toggle($dark-mode: false) {
   @if $dark-mode {
