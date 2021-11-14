@@ -80,21 +80,19 @@ toc: true
 
 paginate: 10
 
-# highlight_theme: tomorrow-night-eighties
-markdown: kramdown
+assets_path: /assets
+
 highlighter: rouge
+markdown: kramdown  # [ maruku | rdiscount | kramdown | redcarpet ]
+markdown_ext:  markdown,mkd,mkdn,md
 kramdown:
-  input: GFM
-  syntax_highlighter: rouge
   syntax_highlighter_opts:   # Rouge Options › https://github.com/jneen/rouge#full-options
     css_class: highlight
-    # 默认语言： console
     span:
       line_numbers: true
     block:
       line_numbers: true
       start_line: 1
-
 
 
   
@@ -196,3 +194,8 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+
+
+plugins:
+  - jekyll-seo-tag

@@ -1,4 +1,15 @@
-const codeBlocks = document.querySelectorAll('.code-header + .highlighter-rouge');
+const codes = document.querySelectorAll('.highlight');
+codes.forEach((code) => {
+    var div = document.createElement('div');
+    var button = document.createElement('button');
+    div.className = 'code-header';
+    button.className = 'copy-code-button';
+    button.ariaLabel = "Copy code to clipboard"
+    div.appendChild(button);
+    code.parentNode.insertBefore(div, code);
+});
+
+const codeBlocks = document.querySelectorAll('.rouge-code');
 const copyCodeButtons = document.querySelectorAll('.copy-code-button');
 
 copyCodeButtons.forEach((copyCodeButton, index) => {

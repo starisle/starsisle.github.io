@@ -12,9 +12,8 @@ comments: false
 Unity项目载入UI包有以下几种方式，开发者可以根据项目需要选择其中一种或者多种方式混搭使用：
 
 1.  将打包后的文件直接发布到Unity的Resources目录或者其子目录下，
-    
     ![](https://www.fairygui.com/docs_images/20180908225713.png)
-    
+
     这种方式处理的UI包，如果使用UIPanel显示UI，不需要任何代码载入包，UIPanel会自动载入；如果是动态创建UI，则要使用代码载入包：
     ```csharp
      //demo就是发布时填写的文件名
@@ -26,6 +25,8 @@ Unity项目载入UI包有以下几种方式，开发者可以根据项目需要�
      //如果不放到Resources或者其子目录下，可以传入全路径，但这种方法只能在Editor里使用
      UIPackage.AddPackage("Assets/SomePath/Package1");
     ```
+    {: #CodeCopy}
+
     AddPackage会先使用传入的路径作为key进行检测，如果这个包已经添加，则不会重复添加。
     
 2.  将发布后的文件打包为两个AssetBundle，即定义文件和资源各打包为一个bundle(desc_bundle+res_bundle)。这样做的好处是一般UI的更新都是修改元件位置什么的，不涉及图片资源的更新，那么只需要重新打包和推送desc_bundle就行了，不需要让玩家更新通常体积比较大的res_bundle，节省流量。打包程序由开发者按照自己熟悉的方式自行实现。以demo为例，请遵循以下规则打包：
@@ -39,7 +40,8 @@ Unity项目载入UI包有以下几种方式，开发者可以根据项目需要�
      //desc_bundle和res_boundle的载入由开发者自行实现。
      UIPackage.AddPackage(desc_bundle, res_bundle);
     ```
-    
+    {: #CodeCopy}
+
     使用这种方式AddPackage，没有排重检测机制，需要你自己保证。
     
 3.  将发布后的文件打包为一个AssetBundle。打包程序由开发者按照自己熟悉的方式自行实现。以demo为例，将demo_fui.bytes和其他资源（demo_atlas0.png等），都放入bundle。
@@ -256,7 +258,6 @@ UIPanel可以用来制作头顶血条。要注意的是：
 ```
 
 如果界面内容过多，创建时可能引起卡顿，FairyGUI提供了异步创建UI的方式，异步创建方式下，每帧消耗的CPU时间将受到控制，但创建时间也会比同步创建稍长一点。例如：
-
 ```csharp
     UIPackage.CreateObjectAsync("包名","组件名", MyCreateObjectCallback);
 
@@ -294,9 +295,8 @@ UIPanel最常用的地方就是3D UI。他可以方便地将UI挂到任意GameOb
 
 下面的代码演示了怎样获取一个GameObject对应的UI节点并修改它的文本：
 
-```
+```csharp
     DisplayObjectInfo info = gameObject.GetComponent<DisplayObjectInfo>(); 
-
     GObject obj = GRoot.inst.DisplayObjectToGObject(info.displayObject);
     obj.text = "Hello";
 ```
