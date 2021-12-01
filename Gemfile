@@ -1,5 +1,5 @@
-source "https://gems.ruby-china.com"
-#source "https://rubygems.org"
+#source "https://gems.ruby-china.com"
+source "https://rubygems.org"
 gem "jekyll", ">= 4.0.0", "< 5.0"
 
 # plugins
