@@ -1,5 +1,5 @@
-#source "https://gems.ruby-china.com"
-source "https://rubygems.org"
+source "https://gems.ruby-china.com"
+#source "https://rubygems.org"
 gem "jekyll", ">= 4.0.0", "< 5.0"
 
 # plugins
@@ -27,3 +27,5 @@ end
 gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
 
 gem "webrick", "~> 1.7"
+
+gem 'sassc', '~> 2.1.0'
