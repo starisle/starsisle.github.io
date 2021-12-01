@@ -7,7 +7,7 @@ pin: false
 toc: false
 comments: false
 author: CK
-------
+---
 
 ```js
 	Events.STATE_CHANGED="fui_state_changed";

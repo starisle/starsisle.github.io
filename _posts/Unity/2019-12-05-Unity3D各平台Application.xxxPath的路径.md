@@ -2,10 +2,12 @@
 title: "Unity3D各平台Application.xxxPath的路径"
 date: 2019-12-05 00:35:40 +0800
 tags: "Unity"
-categories: [Unity]
-comments: false
+categories: [游戏开发]
+pin: false
+toc: false
+comments: true
+author: CK
 ---
-
 常用的是以下四个路径：
 
 Application.dataPath

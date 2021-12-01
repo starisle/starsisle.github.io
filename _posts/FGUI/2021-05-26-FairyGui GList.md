@@ -7,7 +7,7 @@ pin: false
 toc: false
 comments: false
 author: CK
-------
+---
 
 ```js
 	removeChildren()    //删除所有子级。

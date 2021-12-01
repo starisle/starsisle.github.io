@@ -7,7 +7,7 @@ pin: false
 toc: false
 comments: true
 author: CK
-------
+---
 ## Trojan 一键脚本
 
 ```

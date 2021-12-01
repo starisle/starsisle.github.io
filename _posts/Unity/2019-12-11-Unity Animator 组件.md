@@ -2,9 +2,13 @@
 title: "Unity Animator 组件"
 date: 2019-12-11 10:46:17 +0800
 tags: "Unity"
-categories: [Unity]
-comments: false
+categories: [游戏开发]
+pin: false
+toc: false
+comments: true
+author: CK
 ---
+<!-- more -->
 
 1. Controller：使用的 Animator Controller 文件。
 2. Avatar：使用的骨骼文件。
