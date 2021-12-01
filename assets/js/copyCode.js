@@ -9,7 +9,7 @@ codes.forEach((code) => {
     code.parentNode.insertBefore(div, code);
 });
 
-const codeBlocks = document.querySelectorAll('.rouge-code');
+const codeBlocks = codes.querySelectorAll('.rouge-code');
 const copyCodeButtons = document.querySelectorAll('.copy-code-button');
 
 copyCodeButtons.forEach((copyCodeButton, index) => {
