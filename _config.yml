@@ -6,7 +6,7 @@ tagline: 人生中没有后悔，只有教训。  # 它将显示为子标题
 description: 
 
 # 填写站点的基本主机名和协议, e.g., 'https://username.github.io'
-url: 'https://iu2099.github.io'
+url: 'https://starsisle.github.io'
 
 showAuthor: false
  
@@ -15,7 +15,7 @@ author: CK                  # 改成你的全名
 avatar: /assets/img/sample/head.png   # 支持互联网资源
 
 github:
-  username: iu2099             # 更改为github用户名
+  username: starsisle             # 更改为github用户名
 
 twitter:
   username:           # change to your twitter username
@@ -58,9 +58,9 @@ disqus:
 
 gitalk:
   comments: true
-  owner: 'IU2099'
-  admin: 'IU'
-  repo: 'iu2099.github.io'
+  owner: 'starsisle'
+  admin: 'starsisle'
+  repo: 'starsisle.github.io'
   clientID: 'ed52df6e3413b4926979'
   clientSecret: '285823f2e7642a7c8d284ef39787bab0c197b919'
 
